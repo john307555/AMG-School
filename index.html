@@ -67,8 +67,24 @@
             margin-top: 20px;
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
-        
-        /* Animations */
+        .footer {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer span {
+            display: inline-block;
+            opacity: 0;
+            animation: slideIn 1.5s forwards;
+        }
+
+        /* Text animation */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* General animations */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -153,7 +169,12 @@
         <img src="school_image_placeholder.jpg" alt="Al Mawakeb Al Garhoud" class="school-image">
         <p>Explore our vibrant campus and student life.</p>
     </section>
-</main>
 
+    <!-- Footer -->
+    <div class="footer">
+        <span>Made by John</span>
+    </div>
+
+</main>
 </body>
 </html>
