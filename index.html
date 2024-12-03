@@ -6,10 +6,7 @@
     <title>Al Mawakeb Al Garhoud School</title>
     
     <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Import AOS Library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -18,22 +15,21 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            overflow-x: hidden;
         }
         header {
             background-color: #2d3e50;
             color: white;
             padding: 30px 0;
-            transform-origin: center;
+            font-family: 'Lora', serif;
         }
         header h1 {
-            font-size: 3em;
-            font-weight: 600;
+            font-size: 3.5em;
+            font-weight: 700;
             margin: 0;
         }
         header p {
-            font-size: 1.2em;
-            font-weight: 300;
+            font-size: 1.4em;
+            font-weight: 400;
         }
         main {
             padding: 20px;
@@ -42,90 +38,100 @@
         }
         section {
             background: white;
-            margin: 50px 0;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Lora', serif;
+        }
+        section:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
         .section-title {
-            font-size: 2.5em;
+            font-size: 2.4em;
             color: #2d3e50;
+            margin-bottom: 20px;
         }
         a {
             color: #3498db;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
         }
         a:hover {
-            color: #1abc9c;
             text-decoration: underline;
         }
         .footer {
             margin-top: 40px;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #555;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 <body>
 
-<header data-aos="zoom-in" data-aos-duration="1500">
+<header>
     <h1>Al Mawakeb Al Garhoud School</h1>
     <p>Empowering Students for a Brighter Future</p>
 </header>
 
 <main>
     <!-- About Us -->
-    <section data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+    <section>
         <h2 class="section-title">About Us</h2>
-        <p>Al Mawakeb Al Garhoud, founded in 1979, has established itself as one of Dubai's premier educational institutions. With a commitment to academic excellence and character development, the school serves a diverse student body, representing over 80 nationalities.</p>
+        <p>Al Mawakeb Al Garhoud is a premier educational institution in Dubai, founded in 1979. Known for its academic excellence and holistic approach, the school serves a diverse student body, offering programs that foster intellectual, social, and emotional development.</p>
     </section>
 
     <!-- Mission & Vision -->
-    <section data-aos="flip-left" data-aos-duration="1200">
+    <section>
         <h2 class="section-title">Our Mission & Vision</h2>
-        <p><strong>Mission:</strong> We aim to provide a nurturing environment where students can excel academically and grow as individuals.</p>
-        <p><strong>Vision:</strong> Our vision is to produce responsible global citizens equipped with skills, knowledge, and values.</p>
+        <p><strong>Mission:</strong> To provide a nurturing and challenging environment where students are empowered to achieve their highest potential through critical thinking, creativity, and collaboration.</p>
+        <p><strong>Vision:</strong> To shape responsible global citizens who are equipped with the skills, knowledge, and values to thrive in an interconnected world.</p>
     </section>
 
     <!-- Academics -->
-    <section data-aos="fade-down-right" data-aos-duration="1000">
+    <section>
         <h2 class="section-title">Academics</h2>
-        <p>We offer a dynamic curriculum designed to challenge and inspire students at every level:</p>
+        <p>Our comprehensive curriculum includes:</p>
         <ul>
-            <li><strong>Early Childhood Education:</strong> Play-based learning.</li>
-            <li><strong>Primary Education:</strong> Core subjects and literacy.</li>
-            <li><strong>Secondary Education:</strong> Specialized courses for higher education.</li>
-            <li><strong>International Programs:</strong> IB and AP pathways.</li>
+            <li><strong>Early Childhood Education:</strong> Focusing on foundational skills and social development.</li>
+            <li><strong>Primary Education:</strong> A balanced approach to literacy, numeracy, science, and the arts.</li>
+            <li><strong>Secondary Education:</strong> Advanced courses in sciences, humanities, and languages, preparing students for higher education.</li>
+            <li><strong>International Programs:</strong> Partnerships with global institutions and participation in IB and AP programs.</li>
         </ul>
     </section>
 
     <!-- Extracurricular Activities -->
-    <section data-aos="fade-down-left" data-aos-duration="1000">
+    <section>
         <h2 class="section-title">Extracurricular Activities</h2>
-        <p>Our extracurricular programs nurture talents and build leadership skills:</p>
+        <p>We offer a wide range of extracurricular activities that enhance student development:</p>
         <ul>
-            <li><strong>Sports:</strong> Football, basketball, swimming.</li>
-            <li><strong>Performing Arts:</strong> Music, drama, dance.</li>
-            <li><strong>STEM Clubs:</strong> Robotics, coding competitions.</li>
+            <li><strong>Sports:</strong> Football, basketball, swimming, and more.</li>
+            <li><strong>Arts:</strong> Music, drama, painting, and photography clubs.</li>
+            <li><strong>STEM Clubs:</strong> Robotics, coding, and science fairs.</li>
+            <li><strong>Community Service:</strong> Volunteering programs and leadership initiatives.</li>
         </ul>
     </section>
 
     <!-- Facilities -->
-    <section data-aos="zoom-out-up" data-aos-duration="1200">
+    <section>
         <h2 class="section-title">Our Facilities</h2>
-        <p>Our campus includes:</p>
+        <p>Our state-of-the-art campus includes:</p>
         <ul>
-            <li>Smart classrooms with advanced technology.</li>
-            <li>Modern science and computer labs.</li>
-            <li>Extensive library and sports complex.</li>
+            <li>Modern classrooms equipped with smart technology.</li>
+            <li>Fully equipped science and computer labs.</li>
+            <li>Extensive library with digital resources.</li>
+            <li>Sports complex, swimming pool, and gymnasium.</li>
+            <li>Dedicated arts and music studios.</li>
         </ul>
     </section>
 
     <!-- School Links -->
-    <section data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
+    <section>
         <h2 class="section-title">Visit Our Official Websites</h2>
+        <p>Explore more about Al Mawakeb Al Garhoud through our official links:</p>
         <ul>
             <li><a href="https://garhoud-online.almawakeb.sch.ae/" target="_blank">Garhoud Online Portal</a></li>
             <li><a href="https://garhoud.almawakeb.sch.ae/" target="_blank">Main School Website</a></li>
@@ -133,22 +139,10 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer" data-aos="fade-up" data-aos-duration="1200">
+    <div class="footer">
         <span>Made by John</span>
     </div>
 
 </main>
-
-<!-- Import AOS Library Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1200, // Base animation duration
-        once: false, // Animations repeat when scrolling up
-        easing: 'ease-in-out', // Smooth easing
-        mirror: true, // Repeat animation on scroll up
-        anchorPlacement: 'top-bottom', // Start animation as element appears
-    });
-</script>
 </body>
 </html>
