@@ -24,6 +24,7 @@
             background-color: #2d3e50;
             color: white;
             padding: 30px 0;
+            transform-origin: center;
         }
         header h1 {
             font-size: 3em;
@@ -41,53 +42,55 @@
         }
         section {
             background: white;
-            margin: 40px 0;
+            margin: 50px 0;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         .section-title {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #2d3e50;
         }
         a {
             color: #3498db;
             text-decoration: none;
             font-weight: 600;
+            transition: color 0.3s;
         }
         a:hover {
+            color: #1abc9c;
             text-decoration: underline;
         }
         .footer {
             margin-top: 40px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #555;
         }
     </style>
 </head>
 <body>
 
-<header data-aos="fade-down">
+<header data-aos="zoom-in" data-aos-duration="1500">
     <h1>Al Mawakeb Al Garhoud School</h1>
     <p>Empowering Students for a Brighter Future</p>
 </header>
 
 <main>
     <!-- About Us -->
-    <section data-aos="fade-up">
+    <section data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-cubic">
         <h2 class="section-title">About Us</h2>
         <p>Al Mawakeb Al Garhoud, founded in 1979, has established itself as one of Dubai's premier educational institutions. With a commitment to academic excellence and character development, the school serves a diverse student body, representing over 80 nationalities.</p>
     </section>
 
     <!-- Mission & Vision -->
-    <section data-aos="fade-right">
+    <section data-aos="flip-left" data-aos-duration="1200">
         <h2 class="section-title">Our Mission & Vision</h2>
         <p><strong>Mission:</strong> We aim to provide a nurturing environment where students can excel academically and grow as individuals.</p>
         <p><strong>Vision:</strong> Our vision is to produce responsible global citizens equipped with skills, knowledge, and values.</p>
     </section>
 
     <!-- Academics -->
-    <section data-aos="fade-left">
+    <section data-aos="fade-down-right" data-aos-duration="1000">
         <h2 class="section-title">Academics</h2>
         <p>We offer a dynamic curriculum designed to challenge and inspire students at every level:</p>
         <ul>
@@ -99,7 +102,7 @@
     </section>
 
     <!-- Extracurricular Activities -->
-    <section data-aos="zoom-in">
+    <section data-aos="fade-down-left" data-aos-duration="1000">
         <h2 class="section-title">Extracurricular Activities</h2>
         <p>Our extracurricular programs nurture talents and build leadership skills:</p>
         <ul>
@@ -110,7 +113,7 @@
     </section>
 
     <!-- Facilities -->
-    <section data-aos="flip-up">
+    <section data-aos="zoom-out-up" data-aos-duration="1200">
         <h2 class="section-title">Our Facilities</h2>
         <p>Our campus includes:</p>
         <ul>
@@ -121,7 +124,7 @@
     </section>
 
     <!-- School Links -->
-    <section data-aos="fade-up" data-aos-duration="2000">
+    <section data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
         <h2 class="section-title">Visit Our Official Websites</h2>
         <ul>
             <li><a href="https://garhoud-online.almawakeb.sch.ae/" target="_blank">Garhoud Online Portal</a></li>
@@ -130,7 +133,7 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer" data-aos="fade-in">
+    <div class="footer" data-aos="fade-up" data-aos-duration="1200">
         <span>Made by John</span>
     </div>
 
@@ -140,8 +143,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init({
-        duration: 1200, // Animation duration
-        once: true // Only animate once per element
+        duration: 1200, // Base animation duration
+        once: false, // Animations repeat when scrolling up
+        easing: 'ease-in-out', // Smooth easing
+        mirror: true, // Repeat animation on scroll up
+        anchorPlacement: 'top-bottom', // Start animation as element appears
     });
 </script>
 </body>
